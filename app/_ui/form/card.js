@@ -1,17 +1,17 @@
 import Image from "next/image"
-import planet from "@/public/planet.webp"
+import pic7 from "@/public/pic (7).jpg"
 
 export default function Card({ dict }) {
   return (
     <div className="bg-white shadow-2xl/10 border border-gray-50 rounded-xl w-full p-4 md:p-8 active:scale-105 transition-all">
       <div className="grid grid-cols-3 items-center gap-x-4 md:gap-x-8">
         <div
-          className="relative flex justify-center w-full mx-auto aspect-square bg-gray-50 rounded-xl"
+          className="relative flex justify-center w-full mx-auto aspect-square bg-gray-50 rounded-xl overflow-hidden"
         >
           <Image
-            alt=""
             fill
-            src={planet}
+            alt=""
+            src={pic7}
             placeholder="blur"
             className="absolute bottom-5 size-60 object-cover"
           />

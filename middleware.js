@@ -11,7 +11,7 @@ function getLocale(request) {
   const supportedLocales = ['fa', 'en'];
   const matchedLocale = supportedLocales.find(locale =>
     preferredLang.startsWith(locale)
-  );
+  )
 
   return matchedLocale || 'fa';
 }

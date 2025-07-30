@@ -1,11 +1,11 @@
 export default function SearchInput(dict) {
   return (
-    <div className="my-10 px-4" dir="auto">
+    <div className="my-5 px-4 lg:px-8">
       <input
-
+        dir="auto"
         type="search"
-        placeholder={dict.searchInputPlaceholder}
-        className="bg-gray-100 w-full rounded-full placeholder:text-gray-400 px-5 py-2 outline-0 appearance-none"
+        placeholder={dict.searchInputPlaceholder || 'Search...'}
+        className="bg-gray-100 w-full rounded-full placeholder:text-gray-300 px-6 py-2.5 outline-0 appearance-none"
       />
     </div>
   )
