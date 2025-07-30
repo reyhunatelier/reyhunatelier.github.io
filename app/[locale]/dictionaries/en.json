@@ -2,13 +2,16 @@
   "websiteName": "REYHUN ATELIER",
   "artistName": "Reyhaneh",
   "homeText": "Home",
-  "AboutText": "About Me",
+  "aboutText": "About Me",
   "favouriteText": "Favourite",
   "cardTitleText": "Jade plant",
   "cardDiscText": "Numerous varieties and cultivars have been selected, of which C. ovata 'Hummel's Sunset' has gained the Royal Horticultural Society's Award of Garden Merit",
   "rewardsText": "Your Rewards",
   "paymentText": "Payment",
   "searchInputPlaceholder": "Search...",
+
+  "categoriesText": "Categories",
+  "allCategoriesText": "All Categories →",
 
   "callText": "Call",
   "emailText": "Email",

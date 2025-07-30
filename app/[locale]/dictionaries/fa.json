@@ -2,13 +2,16 @@
   "websiteName": "REYHUN ATELIER",
   "artistName": "ریحانه",
   "homeText": "خانه",
-  "AboutText": "درباره من",
+  "aboutText": "درباره من",
   "favouriteText": "علاقه‌مندی",
   "cardTitleText": "گل یشم",
   "cardDiscText": "گونه‌ها و ارقام متعددی انتخاب شده‌اند که از بین آنها جایزه شایستگی باغبانی انجمن سلطنتی را کسب کرده است.",
   "rewardsText": "پاداش شما",
   "paymentText": "پرداخت ها",
   "searchInputPlaceholder": "جستجو...",
+
+    "categoriesText": "دسته‌بندی‌ها",
+  "allCategoriesText": "همه دسته‌بندی‌ها ←",
 
   "callText": "تماس با من",
   "emailText": "ایمیل من",

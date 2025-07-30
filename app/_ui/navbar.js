@@ -3,11 +3,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import avatar from "@/public/avatar.jpg"
+import { usePathname } from 'next/navigation'
 
+import { useEffect, useRef, useState } from 'react'
 import { motion } from "motion/react"
 
-import { usePathname } from 'next/navigation'
-import { useEffect, useRef, useState } from 'react'
 import { classNames } from '@/app/_lib/general'
 
 import {
@@ -16,7 +16,8 @@ import {
   PaintBrushIcon as PaintBrushSolidIcon,
 } from '@heroicons/react/20/solid'
 
-import LanguageSwitcher from './LanguageSwitcher'
+import LocalizedLink from "@/app/_ui/localizedLink"
+import LanguageSwitcher from "@/app/_ui/LanguageSwitcher"
 
 export default function Navbar({ dict }) {
   const [position, setPosition] = useState({ left: 0 })
@@ -77,7 +78,7 @@ export default function Navbar({ dict }) {
             <p className='absolute text-[5px] py-1 tracking-wider mt-[3px] bg-white whitespace-nowrap'>REYHUN ATELIER</p>
           </div> */}
         </div>
-        <div className="flex items-center justify-end text-xs w-20">
+        <LocalizedLink href='/about' className="flex items-center justify-end text-xs w-20">
           <Image
             alt=""
             width={80}
@@ -86,7 +87,7 @@ export default function Navbar({ dict }) {
             placeholder="blur"
             className="w-10 rounded-full aspect-square bg-gray-100 object-cover"
           />
-        </div>
+        </LocalizedLink>
       </div>
 
       <div className="md:hidden fixed flex items-center justify-around bottom-0 h-12 w-full text-white bg-sky-700 z-40">
@@ -100,21 +101,21 @@ export default function Navbar({ dict }) {
           >
             <path
               d="
-            M 0 100
-            C 30 100, 50 30, 100 30
-            C 150 30, 170 100, 200 100
-            L 200 100 
-            L 0 100 
-            Z
-            "
+                M 0 100
+                C 30 100, 50 30, 100 30
+                C 150 30, 170 100, 200 100
+                L 200 100 
+                L 0 100 
+                Z
+              "
               fill="white"
               stroke="none"
             />
           </motion.svg>
         )}
         {pages.map((n, index) => (
-          <Link
-            key={n.name || index}
+          <LocalizedLink
+            key={index}
             href={n.path}
             ref={el => (buttonRefs.current[index] = el)}
             onClick={() => {
@@ -129,7 +130,7 @@ export default function Navbar({ dict }) {
             )}
           >
             <n.icon className='size-6 origin-center' />
-          </Link>
+          </LocalizedLink>
         ))}
       </div>
     </>

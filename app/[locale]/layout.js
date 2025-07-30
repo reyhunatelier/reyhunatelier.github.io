@@ -1,14 +1,15 @@
-import { Amiri } from "next/font/google"
+import { Vazirmatn } from "next/font/google"
 
 import "@/app/_ui/globals.css"
 import Navbar from "@/app/_ui/navbar"
 
 import { getDictionary } from "@/app/[locale]/dictionaries"
 
-const amiri = Amiri({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-amiri",
+const vazirmatn = Vazirmatn({
+  // weight: "400",
+  subsets: ["arabic"],
+  variable: "--font-vazirmatn",
+  display: "swap",
 })
 
 export const metadata = {
@@ -26,8 +27,12 @@ export default async function RootLayout({ children, params }) {
 
   return (
     <html lang={locale} dir="auto">
+      <head>
+        <title>{dict.websiteName}</title>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
-        className={`${amiri.variable} pb-14 antialiased`}
+        className={`${vazirmatn.variable} pb-14 antialiased`}
       >
         <Navbar dict={dict} />
         {children}
