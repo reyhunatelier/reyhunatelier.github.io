@@ -1,0 +1,28 @@
+{
+  "websiteName": "REYHUN ATELIER",
+  "artistName": "ریحانه",
+  "homeText": "خانه",
+  "AboutText": "درباره من",
+  "favouriteText": "علاقه‌مندی",
+  "cardTitleText": "گل یشم",
+  "cardDiscText": "گونه‌ها و ارقام متعددی انتخاب شده‌اند که از بین آنها جایزه شایستگی باغبانی انجمن سلطنتی را کسب کرده است.",
+  "rewardsText": "پاداش شما",
+  "paymentText": "پرداخت ها",
+  "searchInputPlaceholder": "جستجو...",
+
+  "callText": "تماس با من",
+  "emailText": "ایمیل من",
+
+  "notFoundPageText": "برگه‌ای یافت نشد",
+  "returnToHomePageText": "بازگشت به خانه",
+  "returnText": "بازگشت",
+  "section1": {
+    "line1": "IT'S TIME TO",
+    "line2": "VISIT MEHRAN",
+    "line3": "Mehran village is one of the villages in Taleghan County. This village is located in the Bala Taleghan district."
+  },
+  "section3": {
+    "title": "Description of the history of Mehran and the emergence of its first inhabitants:",
+    "desc": "Because the marginal lands and the river were suitable for agriculture, and because of the high altitude and the two high mountains of Pasar Chal and Dohle, there was less wind, they settled there. Or because of the early winter and the closure of the snow-covered passes of Alam Kuh, Takht Soleyman, and Hezar Cham, they were forced to stay there for the winter and spring, and this stay became permanent, and other families who lived in Luchkan and the ruins of their homes remain. Also, several families who lived in the Mazara farm, because these two farms were located at a height and were constantly covered in fog, moved towards the current spring and settlement of Mehran to be relieved from the evils of the fog, the scorching cold, and the harassment of animals, and they began a peaceful life together in this place."
+  }
+}
